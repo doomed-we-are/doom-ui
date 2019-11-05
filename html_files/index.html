@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOOMED we are - Hello Team</title>
+    <script language="javascript">
+	function swapBackgroundColor(selected){
+		if(selected.value == "Default")
+		{
+			document.body.style.backgroundColor = "white";
+		}else{
+			document.body.style.backgroundColor = selected.value;
+		}
+	}
+</script>
+    <style>
+	#color-select{width:200px;}
+	body{color:white; text-align:center; padding-top:25px;}
+	h1{color:black; }
+</style>
+</head>
+<body>
+<h1>Ola Teem</h1>
+<div>
+    <select id="color-select" onchange="swapBackgroundColor(this);">
+        <option>Default</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+    </select>
+</div>
+</body>
+</html>
